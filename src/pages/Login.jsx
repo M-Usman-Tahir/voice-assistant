@@ -4,6 +4,7 @@ import { Link, useHistory } from "react-router-dom";
 import { auth } from '../libraries/firebase';
 import { signInWithEmailAndPassword, signInWithGoogle } from "../authentication";
 import '../stylesheets/Login.css';
+import * as ROUTES from '../constants/routes';
 
 export const Login = () => {
 
@@ -17,7 +18,7 @@ export const Login = () => {
       // trigger a loading screen
       return;
     }
-    if (user) history.replace("/dashboard");
+    if (user) history.replace(ROUTES.HOME);
   }, [user, loading]);
 
   return (
@@ -50,7 +51,7 @@ export const Login = () => {
           <Link to="/reset">Forgot Password</Link>
         </div>
         <div>
-          Don&apos;t have an account? <Link to="/register">Register</Link> now.
+          Don&apos;t have an account? <Link to={ROUTES.SIGN_UP}>Register</Link> now.
         </div>
       </div>
     </div>
