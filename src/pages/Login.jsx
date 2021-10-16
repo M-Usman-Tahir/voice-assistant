@@ -48,7 +48,7 @@ export const Login = () => {
           Login with Google
         </button>
         <div>
-          <Link to="/reset">Forgot Password</Link>
+          <Link to={ROUTES.RESET_PASSWORD}>Forgot Password</Link>
         </div>
         <div>
           Don&apos;t have an account? <Link to={ROUTES.SIGN_UP}>Register</Link> now.
