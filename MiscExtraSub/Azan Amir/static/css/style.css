@@ -1,0 +1,30 @@
+#logo{
+    text-align: center;
+    border-radius: 100%;
+    width: 40%;
+    height: 40%;
+}
+body{
+    text-align: center;
+}
+.LabelField{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+#LoginForm{
+    text-align: center;
+    align-items: center;
+    align-self: center;
+}
+.formdiv{
+    /* box-sizing:content-box; */
+    /* align-self: center; */
+    border-style:groove;
+    border-width: 2px;
+    border-color: black;
+    /* box-sizing: border-box; */
+    /* width: 40%; */
+    /* margin-left: 25%; */
+    border-radius: 15%;
+    /* border-radius: 50%; */
+}
