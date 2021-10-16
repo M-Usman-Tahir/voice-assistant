@@ -1,0 +1,23 @@
+.image {
+  position: absolute;
+  left: 200px;
+  top: 100px;
+  border-radius: 400px;
+}
+body {
+  background-color: yellow;
+}
+.button {
+  padding: 10px;
+  background-color: azure;
+  text-decoration: none;
+  border-radius: 10px;
+}
+button:hover {
+  background-color: blue;
+  color: azure;
+}
+.raees {
+  position: absolute;
+  top: 400px;
+}
