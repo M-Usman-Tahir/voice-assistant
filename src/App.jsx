@@ -4,7 +4,7 @@ import './stylesheets/App.css';
 export const App = () => {
   return (
     <div>
-      Hi, I'm your Virtual Assistant
+      Hi, I&apos;m your Virtual Assistant
     </div>
   )
 }
