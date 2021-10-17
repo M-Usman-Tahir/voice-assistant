@@ -3,7 +3,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { Link, useHistory } from "react-router-dom";
 import { sendPasswordResetEmail } from "../authentication";
 import { auth } from '../libraries/firebase';
-import '../stylesheets/ResetPassword.css';
+import '../stylesheets/ResetPassword.scss';
 
 export const ResetPassword = () => {
 

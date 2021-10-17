@@ -3,7 +3,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link, useHistory } from "react-router-dom";
 import { auth } from '../libraries/firebase';
 import { signInWithEmailAndPassword, signInWithGoogle } from "../authentication";
-import '../stylesheets/Login.css';
+import '../stylesheets/Login.scss';
 import * as ROUTES from '../constants/routes';
 
 export const Login = () => {

@@ -3,7 +3,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { useHistory } from "react-router";
 import { logOut } from "../authentication";
 import { auth, db } from "../libraries/firebase";
-import '../stylesheets/Home.css';
+import '../stylesheets/Home.scss';
 
 export const Home = () => {
 
