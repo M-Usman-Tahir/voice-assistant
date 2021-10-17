@@ -1,0 +1,26 @@
+body{
+    background-color: aqua;
+}
+.gif{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 50%;
+
+}
+.button{
+    padding: 15px 32px;
+    position: absolute;
+    left: 45%;
+    top: 95%;
+    display: inline-block;
+    background-color: forestgreen;
+    font-weight: bold;
+    font-size: large;
+    
+}
+button:hover{
+    background-color: coral;
+    text-decoration: solid;
+}
