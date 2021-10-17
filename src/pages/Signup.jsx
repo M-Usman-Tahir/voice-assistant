@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { Link, useHistory } from "react-router-dom";
 import { auth } from "../libraries/firebase";
+
 import {
   registerWithEmailAndPassword,
   signInWithGoogle,
@@ -72,6 +73,7 @@ export const Signup = () => {
       </div>
       <div className="signup__banner">
         <video src="./videos/siri-motion.mp4" autoPlay loop></video>
+
       </div>
     </div>
   );

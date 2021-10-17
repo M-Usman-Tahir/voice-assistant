@@ -1,4 +1,5 @@
 .dashboard {
+<<<<<<< HEAD
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -29,3 +30,29 @@
     font-size: 1.7rem;
     max-width: 700px;
   }
+=======
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dashboard__container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #dcdcdc;
+  padding: 30px;
+}
+.dashboard__btn {
+  padding: 10px;
+  font-size: 18px;
+  margin-top: 10px;
+  border: none;
+  color: white;
+  background-color: black;
+}
+.dashboard div {
+  margin-top: 7px;
+}
+>>>>>>> 69e1a3ce17c15797c0970594fd011cd02a5b768a
