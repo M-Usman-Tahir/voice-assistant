@@ -2,7 +2,7 @@
 
 $white: #fff;
 $google-blue: #4285f4;
-$button-active-blue: #1669F2;
+$button-active-blue: #1669f2;
 
 .login {
   height: 100vh;
@@ -107,7 +107,7 @@ $button-active-blue: #1669F2;
   height: 4.2rem;
   background-color: $google-blue;
   border-radius: 0.2rem;
-  box-shadow: 0 0.3rem 0.4rem 0 rgba(0,0,0,.25);
+  box-shadow: 0 0.3rem 0.4rem 0 rgba(0, 0, 0, 0.25);
   .google-icon-wrapper {
     position: absolute;
     margin-top: 0.1rem;
@@ -151,8 +151,7 @@ $button-active-blue: #1669F2;
   }
 }
 
-@media screen and (max-width:38rem) {
-
+@media screen and (max-width: 38rem) {
   .login {
     flex-direction: column;
   }
