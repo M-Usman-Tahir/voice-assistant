@@ -3,7 +3,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { Link, useHistory } from "react-router-dom";
 import { auth } from '../libraries/firebase';
 import { registerWithEmailAndPassword, signInWithGoogle } from "../authentication";
-import '../stylesheets/Signup.css';
+import '../stylesheets/Signup.scss';
 
 export const Signup = () => {
 
