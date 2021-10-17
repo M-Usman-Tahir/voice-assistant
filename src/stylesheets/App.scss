@@ -1,0 +1,11 @@
+*, *::backdrop, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
