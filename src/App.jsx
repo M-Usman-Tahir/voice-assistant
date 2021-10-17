@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Home, Login, ResetPassword, Signup } from './pages';
 import * as ROUTES from './constants/routes';
 
-export const App = () => {
+export const App = () => { // App component providing routes to the template components
   
   return (
     <Router>
