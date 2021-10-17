@@ -71,7 +71,7 @@ export const Signup = () => {
         </div>
       </div>
       <div className="signup__banner">
-        <video src="./images/siri-motion.mp4" autoPlay loop></video>
+        <video src="./videos/siri-motion.mp4" autoPlay loop></video>
       </div>
     </div>
   );
