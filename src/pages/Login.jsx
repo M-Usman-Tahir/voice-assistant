@@ -23,7 +23,11 @@ export const Login = () => {
 
   return (
     <div className="login">
+     <div className="login__banner">
+     <img src="./images/siri.png" alt="siri" />
+     </div>
       <div className="login__container">
+        <span className='login__text'>Login</span>
         <input
           type="text"
           className="login__textBox"
@@ -44,14 +48,18 @@ export const Login = () => {
         >
           Login
         </button>
-        <button className="login_btn login_google" onClick={signInWithGoogle}>
-          Login with Google
-        </button>
-        <div>
-          <Link to={ROUTES.RESET_PASSWORD}>Forgot Password</Link>
+
+        <div className="google-btn" onClick={signInWithGoogle}>
+  <div className="google-icon-wrapper">
+    <img className="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"/>
+  </div>
+  <p className="btn-text">Sign in with Google</p>
+</div>
+        <div className="login__links">
+          <Link className="link" to={ROUTES.RESET_PASSWORD}>Forgot Password</Link>
         </div>
-        <div>
-          Don&apos;t have an account? <Link to={ROUTES.SIGN_UP}>Register</Link> now.
+        <div className="login__links">
+          Don&apos;t have an account? <Link className="link" to={ROUTES.SIGN_UP}>Register</Link> now.
         </div>
       </div>
     </div>
