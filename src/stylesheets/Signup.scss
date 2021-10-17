@@ -3,31 +3,97 @@
   width: 100vw;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  background-color: #190c40;
+  font-size: 1.7rem;
 }
 .register__container {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: #dcdcdc;
-  padding: 30px;
+
+  background-color: #ffffff;
+  border: 0rem;
+  padding: 3rem;
+  border-radius: 0.5rem;
+  height: 45rem;
+  width: 35rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .register__textBox {
-  padding: 10px;
-  font-size: 18px;
-  margin-bottom: 10px;
+  padding: 1rem;
+  font-size: 1.8rem;
+  color: #1d1d1f;
+  border: 0.1rem solid #3f1d38;
+  background-color: hsla(0, 0%, 100%, 0.1);
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
 }
 .register__btn {
-  padding: 10px;
-  font-size: 18px;
-  margin-bottom: 10px;
+  padding: 1rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
   border: none;
-  color: white;
-  background-color: black;
+  border-radius: 0.5rem;
+  background-color: #482581;
+  cursor: pointer;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset,
+    rgba(50, 50, 93, 0.1) 0 2px 5px 0, rgba(0, 0, 0, 0.07) 0 1px 1px 0;
+  color: #ffffff;
+  font-size: 1.9rem;
+  height: 4.4rem;
+  outline: none;
+  overflow: hidden;
+  padding: 0 2.5rem;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all 0.2s, box-shadow 0.08s ease-in;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+  &:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+
+  &:focus {
+    box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset,
+      rgba(50, 50, 93, 0.2) 0 6px 15px 0, rgba(0, 0, 0, 0.1) 0 2px 2px 0,
+      rgba(50, 151, 211, 0.3) 0 0 0 4px;
+  }
+
+  &:disabled {
+    cursor: default;
+  }
 }
-.register__google {
-  background-color: #4285f4;
+
+.signup__banner,
+.signup__banner video {
+  border-radius: 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 35rem;
+  height: 45rem;
 }
-.register div {
-  margin-top: 7px;
+
+
+@media screen and (max-width:38rem) {
+
+  .login {
+    flex-direction: column;
+  }
+
+  .signup__banner {
+    display: none;
+  }
 }
