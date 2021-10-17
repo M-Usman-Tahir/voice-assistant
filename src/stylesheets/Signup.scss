@@ -11,6 +11,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  
   background-color: #ffffff;
   border: 0rem;
   padding: 3rem;
@@ -81,6 +82,8 @@
   border-radius: 50%;
   -o-object-fit: cover;
   object-fit: cover;
+  width: 35rem;
+  height: 45rem;
 }
 
 
