@@ -53,7 +53,7 @@ export const Signup = () => {
         <button className="register__btn" onClick={register}>
           Sign up
         </button>
-        <div className="google-btn" onClick={signInWithGoogle}>
+        <div className="google-btn down__1rem" onClick={signInWithGoogle}>
           <div className="google-icon-wrapper">
             <img
               className="google-icon"

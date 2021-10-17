@@ -2,7 +2,7 @@
 
 $white: #fff;
 $google-blue: #4285f4;
-$button-active-blue: #1669F2;
+$button-active-blue: #1669f2;
 
 .login {
   height: 100vh;
@@ -10,16 +10,17 @@ $button-active-blue: #1669F2;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-size: 256rem 210rem;
-  background-repeat: no-repeat;
-  background-image: url("https://www.apple.com/v/siri/d/images/overview/hero_background_large.jpg");
-  background-position: top center;
+  background-color: #190c40;
   font-size: 1.7rem;
 }
 
 .login__banner {
-  border-radius: 50%;
-  border: 0.3rem solid #000000;
+
+  video {
+    -o-object-fit: none;
+    object-fit: none;
+    height: 20rem;
+  }
 }
 
 .login__container {
@@ -60,7 +61,7 @@ $button-active-blue: #1669F2;
   margin-bottom: 1rem;
   border: none;
   border-radius: 0.5rem;
-  background-color: black;
+  background-color: #482581;
   cursor: pointer;
   -webkit-appearance: button;
   -moz-appearance: button;
@@ -107,13 +108,14 @@ $button-active-blue: #1669F2;
   height: 4.2rem;
   background-color: $google-blue;
   border-radius: 0.2rem;
-  box-shadow: 0 0.3rem 0.4rem 0 rgba(0,0,0,.25);
+  cursor: pointer;
+  box-shadow: 0 0.3rem 0.4rem 0 rgba(0, 0, 0, 0.25);
   .google-icon-wrapper {
     position: absolute;
     margin-top: 0.1rem;
     margin-left: 0.1rem;
     width: 4rem;
-    height: 4rem;
+    height: 3.9rem;
     border-radius: 0.2rem;
     background-color: $white;
   }
@@ -151,8 +153,7 @@ $button-active-blue: #1669F2;
   }
 }
 
-@media screen and (max-width:38rem) {
-
+@media screen and (max-width: 38rem) {
   .login {
     flex-direction: column;
   }
