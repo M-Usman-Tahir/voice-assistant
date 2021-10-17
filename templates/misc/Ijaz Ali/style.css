@@ -1,0 +1,28 @@
+body,
+html {
+  
+  margin-top:80px;
+  margin-right: 80px;
+display: flex
+flex-wrap : wrap;
+justify-content: center;
+align-items: center;
+margin-right:-1px;
+background-repeat:no-repeat;
+background-size:cover;
+background-position:center;
+position:relative;
+background: -webkit-linear-gradient(left, rgba(0,168,255,0.5), rgba(185,0,255,0.5));
+}
+body {
+    
+  background-color: rgb(223, 223, 223);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+}
+
+h1{
+    color:rgb(0, 0, 0);
+}
