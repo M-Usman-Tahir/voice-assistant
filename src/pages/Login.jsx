@@ -23,9 +23,9 @@ export const Login = () => {
 
   return (
     <div className="login">
-     <div className="login__banner">
-     <img src="./images/siri.png" alt="siri" />
-     </div>
+     <div className="signup__banner">
+        <video src="./videos/siri-motion.mp4" autoPlay loop></video>
+      </div>
       <div className="login__container">
         <span className='login__text'>Login</span>
         <input
