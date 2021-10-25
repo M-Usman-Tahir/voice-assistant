@@ -59,7 +59,7 @@ When you’re ready to deploy to production, create a minified bundle with `npm 
 
 ## 👤 User Management System
 - <h2>SignUp:</h2>
-<p>In  ShipFair website, users can easily make their new accounts.They can make their profiles and can perform tasks as agent or shipper.They have to put username ,email, password for their accounts.After Signup they can login to their accounts.Their data will be successfully saved in database.Now they can have access to all the fields of the website.
+<p>In  voice assistant website, users can easily make their new accounts.They can make their profiles and can perform tasks as agent or shipper.They have to put username ,email, password for their accounts.After Signup they can login to their accounts.Their data will be successfully saved in database.Now they can have access to all the fields of the website.
   
 - <h2>Login:</h2>
 <p> Users can login to their accounts.They can login via google.This will save users time, they don't have to fill all the fields everytime.Their password will be highly confidential.They can access to all fields to the website.</p>
