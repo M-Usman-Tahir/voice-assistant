@@ -2,10 +2,11 @@ import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useHistory } from "react-router";
 import { logOut } from "../authentication";
-import { auth, db } from "../libraries/firebase";
+import { auth } from "../libraries/firebase";
 import '../stylesheets/Home.scss';
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
 import Siriwave from 'react-siriwave';
+import { fetchUserName } from '../services';
 
 
 export const Home = () => {
@@ -13,31 +14,20 @@ export const Home = () => {
   const [user, loading] = useAuthState(auth);
   const [name, setName] = useState("");
   const history = useHistory();
-  // eslint-disable-next-line no-unused-vars
   const { transcript, listening, resetTranscript, browserSupportsSpeechRecognition } = useSpeechRecognition();
 
   if (!browserSupportsSpeechRecognition) {
     return <span>Browser doesn&apos;t support speech recognition.</span>;
   }
 
-  const fetchUserName = async () => {
-    try {
-      const query = await db
-        .collection("users")
-        .where("uid", "==", user?.uid)
-        .get();
-      const data = await query.docs[0].data();
-      setName(data.name);
-    } catch (err) {
-      console.error(err);
-      alert("An error occurred while fetching user data");
-    }
-  };
-
   useEffect(() => {
     if (loading) return;
     if (!user) return history.replace("/login");
-    fetchUserName();
+    const getUserName = async () => {
+      const name = await fetchUserName(user);
+      setName(name);
+    };
+    getUserName();
   }, [user, loading]);
 
   return (
